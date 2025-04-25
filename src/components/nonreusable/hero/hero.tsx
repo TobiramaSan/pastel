@@ -46,17 +46,17 @@ const Hero = () => {
             >
               <div
                 className={`${styles.word}`}
-                style={{
-                  transformOrigin: "501.344px 37.1719px",
-                  transform: "translate(0px, 0px)",
-                  opacity: 1,
-                }}
+                // style={{
+                //   transformOrigin: "501.344px 37.1719px",
+                //   transform: "translate(0px, 0px)",
+                //   opacity: 1,
+                // }}
               >
                 <em
-                  style={{
-                    backgroundPositionX: "0%",
-                    opacity: 1,
-                  }}
+                // style={{
+                //   backgroundPositionX: "0%",
+                //   opacity: 1,
+                // }}
                 >
                   Empowering
                 </em>
@@ -64,18 +64,18 @@ const Hero = () => {
 
               <div
                 className={`${styles.word}`}
-                style={{
-                  transform: "translate(0px, 0px)",
-                  opacity: 1,
-                  transformOrigin: "501.344px 41.7773px",
-                }}
+                // style={{
+                //   transform: "translate(0px, 0px)",
+                //   opacity: 1,
+                //   transformOrigin: "501.344px 41.7773px",
+                // }}
               >
                 <div
                   className={`${styles.bottomContainer}`}
-                  style={{
-                    transform: "translate(0px, 0px)",
-                    opacity: 1,
-                  }}
+                  // style={{
+                  //   transform: "translate(0px, 0px)",
+                  //   opacity: 1,
+                  // }}
                 >
                   <a
                     href="/"

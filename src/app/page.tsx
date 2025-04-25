@@ -6,11 +6,16 @@ import Header from "@/components/reusable/header/header";
 export default function Home() {
   return (
     <>
-      <div id={styles.app}>
+      <div id={styles.app} style={{ opacity: 1 }}>
         <div className={styles.flexible}>
           <div className={styles.background}></div>
           <div className={`${styles.inner} ${styles.gradient}`}>
-            <header className={styles.header}>
+            <header
+              className={styles.header}
+              // style={{
+              //   transform: "translate(0px, -100%)",
+              // }}
+            >
               <Header />
             </header>
             <Hero />
@@ -21,9 +26,9 @@ export default function Home() {
       <div className={styles.cursor} id={styles.cursor}>
         <div
           className="follow"
-          style={{
-            transform: "translate(890px, 575px)",
-          }}
+          // style={{
+          //   transform: "translate(890px, 575px)",
+          // }}
         >
           <span></span>
         </div>
