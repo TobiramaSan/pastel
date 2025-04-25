@@ -36,6 +36,7 @@ const CarouselComponent = () => {
           </div>
         </div>
       </div>
+      {/* Cards */}
       <div className=""></div>
     </section>
   );

@@ -1,0 +1,143 @@
+.cardSolution {
+  background-color: #000;
+  background-color: var(--black);
+  height: calc(var(--vh, 1vh) * 100);
+  width: 50vw;
+}
+
+.card {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  height: 26.25vw;
+  justify-content: flex-start;
+  padding: 5vw;
+  position: relative;
+  z-index: 1;
+}
+
+.cardSolution .group .top {
+  width: 20vw;
+}
+
+.cardSolution .group .title {
+  margin-bottom: 0.833vw;
+}
+
+.title.large {
+  font-size: 2.917vw;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.14;
+}
+
+.title {
+  font-family: Helvetica, Arial, sans-serif;
+  font-family: var(--font-primary);
+  position: relative;
+}
+
+.wysiwyg.wLight {
+  font-weight: 300;
+}
+
+.wysiwyg.medium {
+  font-size: 1vw;
+  line-height: 1.45;
+}
+
+.wysiwyg {
+  color: inherit;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  position: relative;
+}
+
+.cardSolution .group .bottom {
+  -moz-column-gap: 0.833vw;
+  column-gap: 0.833vw;
+  display: flex;
+  margin-top: 2.5vw;
+}
+
+.button.arrow {
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid #01010c;
+  border-radius: 2.5vw;
+  -moz-column-gap: 0.833vw;
+  column-gap: 0.833vw;
+  font-family: Inter Tight, Helvetica, Arial, sans-serif;
+  font-size: 0.875vw;
+  font-weight: 400;
+  height: 2.5vw;
+  line-height: 2.5vw;
+  padding: 0 1.25vw;
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  width: auto;
+}
+
+.bottom a {
+  color: inherit;
+  font-weight: 400;
+  outline: 0;
+  text-decoration: none;
+}
+
+.cardSolution .group .bottom .button .icon {
+  display: block;
+  position: relative;
+  transform: translateX(0);
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.button.rrow .icon {
+  height: 0.833vw;
+  width: 0.833vw;
+}
+
+.icon {
+  align-items: center;
+  cursor: pointer;
+  /* display: inline-flex; */
+  /* height: 2.5vw; */
+  justify-content: center;
+  /* position: relative; */
+  /* width: 2.5vw; */
+}
+
+.cardSolution .image {
+  background-color: #000;
+
+  height: calc(100vh - 26.25vw);
+}
+
+.image {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.card-solution .image img {
+  width: calc(100% + 10vw);
+}
+
+.image img {
+  height: 100%;
+  left: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  transition: filter 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  vertical-align: middle;
+  width: 100%;
+}

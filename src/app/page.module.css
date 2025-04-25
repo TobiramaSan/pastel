@@ -18,11 +18,12 @@
   min-height: calc(1vh * 100);
   min-height: calc(var(--vh, 1vh) * 100);
   position: relative;
+  background-color: radial-gradient(circle, #0a0d3a00 0, #0a0d3a 50%);
 }
 
 #app > div > .background {
   background-color: #01010c;
-  background-color: var(--primary-black);
+
   bottom: 0;
   height: 100%;
   left: 0;
@@ -41,7 +42,7 @@
 }
 
 #app > div > .inner {
-  background-color: #fbfafe;
+  background-color: radial-gradient(circle, #0a0d3a00 0, #0a0d3a 50%);
   background-color: var(--bg);
   position: relative;
 }
@@ -108,7 +109,7 @@
 #cursor .follow span {
   color: #fff;
   font-family: Courier New, monospace;
-  font-family: var(--font-tertiary);
+
   font-size: 0.625vw;
   left: 0.5vw;
   letter-spacing: -0.05em;

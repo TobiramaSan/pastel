@@ -1,11 +1,10 @@
 .section {
-  /* display: block; */
+  display: block;
   position: relative;
   width: 100%;
-  /* margin: 0;
-  border: 0; */
+  margin: 0;
+  border: 0;
   padding: 0;
-  background: radial-gradient(circle, #0a0d3a00 0, #0a0d3a 50%);
 }
 
 .container {
@@ -19,7 +18,7 @@
 
 .componentCarouselSolutions .columns {
   justify-content: flex-end;
-  padding-bottom: 10vw;
+  margin-bottom: 10vw;
   padding-top: 5vw;
 }
 
