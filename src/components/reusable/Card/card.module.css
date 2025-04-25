@@ -9,7 +9,7 @@
   display: block;
   overflow: hidden;
   position: relative;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .group {
@@ -67,7 +67,9 @@
 }
 
 .button.arrow {
+  display: inline-flex;
   align-items: center;
+  justify-content: center;
   background-color: transparent;
   border: 1px solid #01010c;
   border-radius: 2.5vw;
@@ -91,13 +93,13 @@
 }
 
 .cardSolution .group .bottom .button .icon {
-  display: block;
+  display: flex;
   position: relative;
   transform: translateX(0);
   transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.button.rrow .icon {
+.button.arrow .icon {
   height: 0.833vw;
   width: 0.833vw;
 }
@@ -105,11 +107,28 @@
 .icon {
   align-items: center;
   cursor: pointer;
-  /* display: inline-flex; */
-  /* height: 2.5vw; */
+  display: inline-flex;
+  height: 2.5vw;
   justify-content: center;
-  /* position: relative; */
-  /* width: 2.5vw; */
+  position: relative;
+  width: 2.5vw;
+}
+
+.cardSolution .group .bottom .button:hover .icon {
+  transform: translateX(40%);
+}
+
+.cardSolution .group .bottom .button .icon {
+  display: block;
+  position: relative;
+  transform: translateX(0);
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.button.arrow .icon {
+  height: 0.833vw;
+  transform: translateX(0);
+  width: 0.833vw;
 }
 
 .cardSolution .image {
@@ -125,7 +144,7 @@
   width: 100%;
 }
 
-.card-solution .image img {
+.cardSolution .image img {
   width: calc(100% + 10vw);
 }
 

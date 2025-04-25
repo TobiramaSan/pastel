@@ -11,7 +11,7 @@ interface CardProps {
   image?: string;
   color?: string;
 }
-const card = ({
+const Card = ({
   title,
   broken,
   description,
@@ -41,7 +41,7 @@ const card = ({
         <div className={styles.bottom}>
           <a href="/" className={`${styles.button} ${styles.arrow}`}>
             <div className={styles.text}>{buttonName}</div>
-            <div className="icon">
+            <div className={styles.icon}>
               <SmallArrow />
             </div>
           </a>
@@ -56,7 +56,7 @@ const card = ({
         </div>
       </div>
       <div
-        className="image "
+        className={styles.image}
         // style="aspect-ratio: 1.60858 / 1; translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);"
       >
         <img width="200" height="124" src={image} data-src={image} alt="" />
@@ -65,4 +65,4 @@ const card = ({
   );
 };
 
-export default card;
+export default Card;

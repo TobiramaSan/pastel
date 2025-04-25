@@ -9,7 +9,7 @@ const CardData: CardProps[] = [
     secondaryButtonName: "",
     color: "#c189ff",
     image:
-      "https://trustedconnectivity.valid.com/wp-content/uploads/2024/12/featured-sim.jpg",
+      "https://res.cloudinary.com/dwtjcpszy/image/upload/v1745587566/featured-sim_dtcrei.jpg",
   },
   {
     title: "eSIMs",
@@ -19,17 +19,18 @@ const CardData: CardProps[] = [
     secondaryButtonName: "eSIM Interoperability",
     color: "#18e1f3",
     image:
-      "https://trustedconnectivity.valid.com/wp-content/uploads/2024/12/featured-esim.jpg",
+      "https://res.cloudinary.com/dwtjcpszy/image/upload/v1745587568/featured-esim_egisdy.jpg",
   },
   {
-    title: "eSIM Solutions",
+    title: "eSIM",
+    broken: "Solutions",
     description:
       "Manage eSIM subscriptions and streamline consumer onboarding to drive acquisition and retention.",
     buttonName: "Remote SIM Provisioning",
     secondaryButtonName: "eSIM Onboarding Journeys",
     color: "#2ee76f",
     image:
-      "https://trustedconnectivity.valid.com/wp-content/uploads/2024/12/featurde-esim-solutions.jpg",
+      "https://res.cloudinary.com/dwtjcpszy/image/upload/v1745587564/featurde-esim-solutions_z5m53r.jpg",
   },
   {
     title: "5G",
@@ -39,7 +40,7 @@ const CardData: CardProps[] = [
     secondaryButtonName: "OTA Suite",
     color: "#fa9b26",
     image:
-      "https://trustedconnectivity.valid.com/wp-content/uploads/2024/12/featured-5g.jpg",
+      "https://res.cloudinary.com/dwtjcpszy/image/upload/v1745587568/featured-5g_ekoh7n.jpg",
   },
   {
     title: "Integrated SE",
@@ -49,17 +50,18 @@ const CardData: CardProps[] = [
     secondaryButtonName: "iSIM",
     color: "#ff6359",
     image:
-      "https://trustedconnectivity.valid.com/wp-content/uploads/2024/12/featured-integrated-se.jpg",
+      "https://res.cloudinary.com/dwtjcpszy/image/upload/v1745587565/featured-integrated-se_vqbw30.jpg",
   },
   {
-    title: "IoT Connectivity",
+    title: "IoT",
+    broken: "Connectivity",
     description:
       "Seamlessly connect and secure your IoT ecosystem with scalable, interoperable solutions designed to drive innovation and enable future-proof connectivity.",
     buttonName: "IoT  Connectivity",
     secondaryButtonName: "",
     color: "#5c9cff",
     image:
-      "https://trustedconnectivity.valid.com/wp-content/uploads/2024/12/featured-iot-connectivity.jpg",
+      "https://res.cloudinary.com/dwtjcpszy/image/upload/v1745587565/featured-iot-connectivity_z38qy8.jpg",
   },
 ];
 

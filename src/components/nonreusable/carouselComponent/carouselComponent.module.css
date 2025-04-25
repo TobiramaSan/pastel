@@ -121,3 +121,31 @@
 .word.word1 {
   margin-left: 214px;
 }
+
+.container.wide {
+  padding: 0;
+  width: 100%;
+}
+
+.componentCarouselSolutions .draggable {
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.draggable {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.componentCarouselSolutions .draggable .inner {
+  justify-content: flex-start;
+}
+
+.draggable .inner {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: auto;
+  will-change: transform;
+}

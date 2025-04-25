@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./carouselComponent.module.css";
 import Arrow from "@/assets/svgs/Arrow";
+import { CardData } from "@/data/data";
+import Card from "@/components/reusable/Card/card";
 const CarouselComponent = () => {
   return (
     <section
@@ -37,7 +39,26 @@ const CarouselComponent = () => {
         </div>
       </div>
       {/* Cards */}
-      <div className=""></div>
+
+      <div className={`${styles.container} ${styles.wide}`}>
+        <div className={styles.sticky} style={{ height: "3954px" }}>
+          <div className={styles.draggable} style={{}}>
+            <div className={styles.inner}>
+              {CardData.map((item, index) => (
+                <Card
+                  key={index}
+                  title={item.title}
+                  description={item.description}
+                  buttonName={item.buttonName}
+                  secondaryButtonName={item.secondaryButtonName}
+                  image={item.image}
+                  color={item.color}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
