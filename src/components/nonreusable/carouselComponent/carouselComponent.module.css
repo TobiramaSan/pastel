@@ -1,5 +1,124 @@
 .section {
-  display: block;
+  /* display: block; */
   position: relative;
   width: 100%;
+  /* margin: 0;
+  border: 0; */
+  padding: 0;
+  background: radial-gradient(circle, #0a0d3a00 0, #0a0d3a 50%);
+}
+
+.container {
+  margin: auto;
+  max-width: 100%;
+  padding: 0 0.833vw;
+  /* padding: 0 var(--space); */
+  position: relative;
+  width: 80vw;
+}
+
+.componentCarouselSolutions .columns {
+  justify-content: flex-end;
+  padding-bottom: 10vw;
+  padding-top: 5vw;
+}
+
+.columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: calc(0.417vw * -1);
+  margin-right: calc(0.417vw * -1);
+  row-gap: 0.833vw;
+}
+
+.componentCarouselSolutions .columns .item {
+  color: #fbfafe;
+  width: 44.792vw;
+}
+
+.columns .item {
+  padding-left: 0.417vw;
+  padding-left: var(--space-half);
+  padding-right: 0.417vw;
+  padding-right: var(--space-half);
+  position: relative;
+}
+
+.textBlockArrow {
+  display: flex;
+  position: relative;
+  text-align: left;
+  width: 44.792vw;
+  color: #fbfafe;
+}
+
+.textBlockArrow .group {
+  align-items: center;
+  display: flex;
+  height: 3.333vw;
+}
+
+.componentCarouselSolutions .columns .item .label {
+  color: #fbfafe;
+}
+
+.text-block-arrow .group .label {
+  /* color: #131bff;
+    color: var(--primary-blue); */
+  margin-right: 1vw;
+  /* opacity: 0.0001; */
+  white-space: nowrap;
+}
+
+.label {
+  display: inline-flex;
+  font-size: 0.875vw;
+  font-weight: 500;
+  letter-spacing: normal;
+  line-height: 1.5;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.textBlockArrow .group .arrow {
+  display: inline-flex;
+  margin-right: 1vw;
+  /* transform: scaleX(0); */
+  transform-origin: 0 50%;
+  width: 10vw;
+}
+
+.textBlockArrow .title {
+  display: block;
+  position: relative;
+  width: 44.792vw;
+  margin-left: -214px;
+}
+
+.title.large {
+  font-size: 2.917vw;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.14;
+}
+
+.title {
+  /* font-family: PP Radio Grotesk, Helvetica, Arial, sans-serif; */
+  font-family: var(--font-primary);
+  /* position: relative; */
+}
+
+.word {
+  position: relative;
+  display: inline-block;
+  translate: none;
+  rotate: none;
+  scale: none;
+  transform: translate(0px, 0vw);
+  opacity: 1;
+}
+
+.word.word1 {
+  margin-left: 214px;
 }
