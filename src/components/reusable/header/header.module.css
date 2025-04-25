@@ -1,0 +1,109 @@
+.container {
+  margin: auto;
+  max-width: 100%;
+  padding: 0 0.833vw;
+  padding: 0 var(--space);
+  position: relative;
+  width: 90vw;
+}
+
+.columns {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  row-gap: var(--space);
+}
+
+.nogutters {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.items {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 0;
+  padding-right: 0;
+
+  padding-left: 0.417vw;
+
+  padding-right: 0.417vw;
+
+  position: relative;
+}
+
+.link {
+  display: inline-block;
+  height: 2.5vw;
+  line-height: 1;
+  margin-right: 5vw;
+  pointer-events: all;
+  text-align: center;
+  transform: scale(1);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: all 0.4s var(--expoOut);
+  width: auto;
+}
+
+.submenus {
+  align-items: center;
+  display: hidden;
+  justify-content: space-between;
+  left: 50%;
+  pointer-events: none;
+  position: fixed;
+  top: -2.917vw;
+  transform: translateX(-50%);
+  width: 100vw;
+  z-index: -1;
+}
+
+.menuMain {
+  align-items: center;
+  display: flex;
+}
+
+.menuMain {
+  list-style: none;
+  list-style-type: none;
+}
+
+.menuMain li:not(:last-child) {
+  margin-right: 2.5vw;
+}
+
+.item .button {
+  border-radius: 4.167vw;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1vw;
+  font-weight: 600;
+  height: 3.208vw;
+  justify-content: center;
+  letter-spacing: 0.05em;
+  line-height: 3.208vw;
+  position: relative;
+  text-align: center;
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  width: auto;
+
+  -webkit-backdrop-filter: blur(60px);
+  backdrop-filter: blur(60px);
+  background: hsla(0, 0%, 100%, 0.102);
+  color: #05c2ff;
+}
+
+.item .button .tertiary {
+  -webkit-backdrop-filter: blur(60px);
+  backdrop-filter: blur(60px);
+  background-color: hsla(0, 0%, 61%, 0.102);
+  color: #131bff;
+  color: var(--primary-blue);
+  font-weight: 400;
+  height: 2.5vw;
+  line-height: 2.5vw;
+  padding: 0 1.25vw;
+}

@@ -6,7 +6,52 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #fbfafe;
+
+    --font-primary: "PP Radio Grotesk", "Helvetica", "Arial", sans-serif;
+    --font-secondary: "Inter Tight", "Helvetica", "Arial", sans-serif;
+    --font-tertiary: "PP Editorial New", "Courier New", monospace;
+    --bg: #fbfafe;
+    --bg-soft: #f7f5ff;
+    --white: #fff;
+    --light: #fbfafe;
+    --grey: #f0f0f0;
+    --dark: #b2b2b2;
+    --black: #000;
+    --primary-white: #fbfafe;
+    --primary-black: #01010c;
+    --primary-blue: #131bff;
+    --secondary-blue: #182799;
+    --secondary-blue-medium: #3483ff;
+    --secondary-blue-light: #05c2ff;
+    --sustainability: #82ca93;
+    --sales-channel: #e7d2ff;
+    --activation-methods: #9fe7ff;
+    --activation-scenarios: #cae9ec;
+    --device-tools: #82ca93;
+    --plans: #d5e3cd;
+    --device-type: #fde4bc;
+    --device-os: #fbc7c7;
+    --light-blue: #18e1f3;
+    --light-green: #2ee76f;
+    --soft-blue: #cae9ec;
+    --soft-green: #d5e3cd;
+    --soft-orange: #fde4bc;
+    --soft-red: #fbc7c7;
+    --solid-blue: #5c9cff;
+    --solid-green: #09a93f;
+    --solid-orange: #fa9b26;
+    --solid-red: #ff6359;
+    --solid-violet: #c189ff;
+    --opacity-blue: rgba(6, 210, 228, 0.5);
+    --error: #d30000;
+    --success: #10bb52;
+    --alert: #ffd702;
+    --overlay: #18181a;
+    --hint: #9c9b99;
+    --border: rgba(94, 101, 125, 0.502);
+    --space: 0.833vw;
+    --space-half: 0.417vw;
   }
 }
 
@@ -17,8 +62,8 @@ body {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: var(--background);
+  background: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -32,6 +77,8 @@ body {
 
 a {
   color: inherit;
+  font-weight: 400;
+  outline: 0;
   text-decoration: none;
 }
 
