@@ -110,7 +110,7 @@ const MwcCard = () => {
                   <h3
                     className={`${styles.title} ${styles.small} ${styles.na}`}
                   >
-                    Valid's Take on Multiple Enabled Profiles
+                    Valid&apos;s Take on Multiple Enabled Profiles
                   </h3>
                 </div>
               </div>
