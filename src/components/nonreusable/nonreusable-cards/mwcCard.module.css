@@ -1,0 +1,166 @@
+.item0 {
+  height: 55vw;
+  width: 48.75vw;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+}
+
+.magnet {
+  will-change: transform, opacity;
+}
+
+.item0 .slider {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.sliderInitialized {
+  justify-content: flex-start;
+}
+
+.item0 .slider .inner {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  will-change: transform;
+}
+
+.item0 .slider .item {
+  height: 100%;
+  left: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  will-change: transform;
+}
+
+.cardSlider {
+  background-color: #01010c;
+  border-radius: 15px;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  color: inherit;
+  font-weight: 400;
+  outline: 0;
+  text-decoration: none;
+}
+
+.magnet {
+  will-change: transform, opacity;
+}
+
+.cardSlider .box {
+  background-color: #fbfafe;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+  height: 31.75vw;
+  padding: 2.5vw;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.cardSlider .label {
+  text-transform: initial;
+  display: inline-flex;
+  font-weight: 500;
+  line-height: 1.5;
+  position: relative;
+}
+
+.label.large {
+  font-size: 1.167vw;
+  letter-spacing: 0.02em;
+}
+
+.cardSlider .group .flex {
+  -moz-column-gap: 1.25vw;
+  column-gap: 1.25vw;
+  margin-bottom: 1.458vw;
+  margin-top: 5.708vw;
+  align-items: center;
+  display: flex;
+}
+
+.wysiwyg.small {
+  font-size: 0.875vw;
+  line-height: 1.23;
+  color: inherit;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  position: relative;
+}
+
+.wysiwyg.time {
+  align-items: center;
+  -moz-column-gap: 0.417vw;
+  column-gap: 0.417vw;
+  display: flex;
+}
+
+.wysiwyg {
+  color: inherit;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  position: relative;
+}
+
+.wysiwyg.time:before {
+  --wpr-bg-dc9da8e1-9f72-410c-b50b-2603e7177ee9: url(https://trustedconnectivity.valid.com/wp-content/themes/valid/img/clock.svg);
+}
+
+.wysiwyg.time:before {
+  background: var(--wpr-bg-dc9da8e1-9f72-410c-b50b-2603e7177ee9) 50% no-repeat;
+  background-size: contain;
+  content: "";
+  display: block;
+  height: 0.833vw;
+  position: relative;
+  width: 0.833vw;
+}
+
+.cardSlider .group .title {
+  width: 19.917vw;
+}
+
+.title.small {
+  font-size: 2vw;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.16;
+}
+
+.title {
+  font-family: Helvetica, Arial, sans-serif;
+  position: relative;
+}
+
+.cardSlider .image {
+  bottom: 3.333vw;
+  height: 26.875vw;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.image.rounded {
+  border-radius: 10px;
+}
+
+@media (min-width: 1025px) and (orientation: landscape) {
+  * {
+    -webkit-user-drag: none;
+  }
+}
