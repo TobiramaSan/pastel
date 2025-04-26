@@ -1,12 +1,13 @@
 import React from "react";
 import styles from "./blogCard.module.css";
 import Link from "next/link";
+import Image from "next/image";
 const BlogCard = () => {
   return (
     <div className={`${styles.item} ${styles.item1} ${styles.magnet}`}>
       <div className={`${styles.card} ${styles.eventPhoto}`}>
         <div className={`${styles.image} ${styles.cover} `}>
-          <img
+          <Image
             width="200"
             height="222"
             src="https://res.cloudinary.com/dwtjcpszy/image/upload/v1745682726/bg-events-7_ep0ceh.jpg"

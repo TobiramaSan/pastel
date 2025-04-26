@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import React from "react";
 import styles from "./card.module.css";
 import SmallArrow from "@/assets/svgs/SmallArrow";
 import {
@@ -8,14 +8,15 @@ import {
   //  useTransform
 } from "motion/react";
 import Link from "next/link";
+import Image from "next/image";
 
 interface CardProps {
   title: string;
   broken?: string;
   description: string;
   buttonName: string;
-  secondaryButtonName?: string;
-  image?: string;
+  secondaryButtonName: string;
+  image: string;
   color?: string;
 }
 
@@ -59,7 +60,7 @@ const Card = ({
               <SmallArrow />
             </div>
           </Link>
-          {secondaryButtonName!?.length > 0 && (
+          {secondaryButtonName?.length > 0 && (
             <Link href="/" className={`${styles.button} ${styles.arrow}`}>
               <div className={styles.text}>{secondaryButtonName}</div>
               <div className={styles.icon}>
@@ -80,7 +81,7 @@ const Card = ({
         // }}
         className={styles.image}
       >
-        <img width="200" height="124" src={image} data-src={image} alt="" />
+        <Image width="200" height="124" src={image} data-src={image} alt="" />
       </motion.div>
     </motion.div>
   );

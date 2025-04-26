@@ -4,6 +4,7 @@ import styles from "./mwcCard.module.css";
 import Link from "next/link";
 import CardArrowLeft from "@/assets/svgs/CardArrowLeft";
 import CardArrowRight from "@/assets/svgs/CardArrowRight";
+import Image from "next/image";
 const MwcCard = () => {
   return (
     <div className={`${styles.item} ${styles.item0} ${styles.magnet}`}>
@@ -33,12 +34,13 @@ const MwcCard = () => {
                   <h3
                     className={`${styles.title} ${styles.small} ${styles.na}`}
                   >
-                    Valid's Take on Multiple Enabled Profiles
+                    Valid&apos;s Take on Multiple Enabled Profiles
                   </h3>
                 </div>
               </div>
               <div className={`${styles.image} ${styles.rounded}`}>
-                <img
+                <Image
+                  alt=""
                   width="200"
                   height="119"
                   src="https://res.cloudinary.com/dwtjcpszy/image/upload/v1745673638/mobile-people_kdzqoo.jpg"
@@ -70,14 +72,15 @@ const MwcCard = () => {
                   <h3
                     className={`${styles.title} ${styles.small} ${styles.na}`}
                   >
-                    Valid's Take on Multiple Enabled Profiles
+                    Valid&apos;s Take on Multiple Enabled Profiles
                   </h3>
                 </div>
               </div>
               <div className={`${styles.image} ${styles.rounded}`}>
-                <img
+                <Image
                   width="200"
                   height="119"
+                  alt=""
                   src="https://res.cloudinary.com/dwtjcpszy/image/upload/v1745674422/wireless-earbuds-with-neon-cyberpunk-style-lighting-9_qnl1cu.jpg"
                 />
               </div>
@@ -112,9 +115,10 @@ const MwcCard = () => {
                 </div>
               </div>
               <div className={`${styles.image} ${styles.rounded}`}>
-                <img
+                <Image
                   width="200"
                   height="119"
+                  alt=""
                   src="https://res.cloudinary.com/dwtjcpszy/image/upload/v1745674419/template-mobile-communication-company-identity-with-mini-micro-nano-phone-sim-card_kiqxn7.jpg"
                 />
               </div>

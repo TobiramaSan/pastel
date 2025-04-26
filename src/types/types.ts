@@ -3,8 +3,8 @@ export interface CardProps {
   broken?: string;
   description: string;
   buttonName: string;
-  secondaryButtonName?: string;
-  image?: string;
+  secondaryButtonName: string;
+  image: string;
   color?: string;
 }
 

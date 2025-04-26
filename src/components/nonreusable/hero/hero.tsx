@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./hero.module.css";
+import Link from "next/link";
 const Hero = () => {
   return (
     <section
@@ -77,14 +78,14 @@ const Hero = () => {
                   //   opacity: 1,
                   // }}
                 >
-                  <a
+                  <Link
                     href="/"
                     className={`${styles.button} ${styles.primary} ${styles.na}`}
                   >
                     <div className={`${styles.text}`}>
                       <span>Talk to our experts</span>
                     </div>
-                  </a>
+                  </Link>
                 </div>
                 seamless
               </div>
