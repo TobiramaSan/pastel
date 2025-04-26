@@ -1,6 +1,10 @@
 import React from "react";
 import styles from "./hero2.module.css";
 import Link from "next/link";
+import MwcCard from "../nonreusable-cards/mwcCard";
+import BlogCard from "../nonreusable-cards/blogCard";
+import ColorCard from "@/components/reusable/Card/colorCard";
+import { ColorCardData } from "@/data/data";
 const Hero2 = () => {
   return (
     <section
@@ -20,7 +24,18 @@ const Hero2 = () => {
           </Link>
         </div>
         {/* Columns */}
-        <div className={`${styles.columns} ${styles.noGutter}`}></div>
+        <div className={`${styles.columns} ${styles.noGutter}`}>
+          <MwcCard />
+          <BlogCard />
+          {ColorCardData.map((item, index) => (
+            <ColorCard
+              key={index}
+              topText={item.topText}
+              title={item.title}
+              color={item.color}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

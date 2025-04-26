@@ -7,3 +7,9 @@ export interface CardProps {
   image?: string;
   color?: string;
 }
+
+export interface ColorCardProps {
+  topText: string;
+  title: string;
+  color: string;
+}

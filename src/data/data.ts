@@ -1,4 +1,4 @@
-import { CardProps } from "@/types/types";
+import { CardProps, ColorCardProps } from "@/types/types";
 
 const CardData: CardProps[] = [
   {
@@ -65,4 +65,18 @@ const CardData: CardProps[] = [
   },
 ];
 
-export { CardData };
+const ColorCardData: ColorCardProps[] = [
+  {
+    topText: "White Papers",
+    title: "Optimizing eSIM Adoption: Adoption Interoperability",
+    color: "#131bff",
+  },
+  {
+    topText: "PRS",
+    title:
+      "CATEL Selects Valid’s Quarter-Size SIM Cards solution: A Step Towards Innovation and Sustainability",
+    color: "#182799",
+  },
+];
+
+export { CardData, ColorCardData };

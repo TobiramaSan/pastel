@@ -1,0 +1,140 @@
+.item1 {
+  height: 55vw;
+  width: 48.75vw;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+  will-change: transform, opacity;
+}
+
+.item1 .card {
+  border-radius: 10px;
+  color: #fbfafe;
+  height: 100%;
+  padding: 2.5vw;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.image.cover {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  overflow: hidden;
+}
+
+.image img {
+  height: 100%;
+  left: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  transition: filter 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  vertical-align: middle;
+  width: 100%;
+}
+
+.overlay._30 {
+  opacity: 0.3;
+}
+
+.overlay {
+  background-color: #000;
+  height: 100%;
+  left: 0;
+  /* opacity: 1; */
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.item1 .card .label {
+  margin-bottom: 2.5vw;
+  line-height: 1.5;
+  position: relative;
+  font-weight: 500;
+  display: inline-flex;
+}
+
+.label.large {
+  font-size: 1.167vw;
+  letter-spacing: 0.02em;
+  /* text-transform: none; */
+  text-transform: initial;
+}
+
+.item1 .card .heading {
+  width: 15.417vw;
+}
+
+.heading.large {
+  font-size: 2.917vw;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.14;
+}
+
+.heading {
+  font-family: Courier New, monospace;
+  position: relative;
+}
+
+.item1 .card .group {
+  bottom: 2.5vw;
+  left: 2.5vw;
+  position: absolute;
+  width: 17.5vw;
+}
+
+.wysiwyg.large {
+  font-size: 1.167vw;
+  line-height: 1.28;
+  color: inherit;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  position: relative;
+}
+
+.wysiwyg p:last-child {
+  margin-bottom: 0;
+}
+
+.item1 .card .group .button {
+  margin-top: 2.5vw;
+}
+
+.button.primary {
+  background-color: #fbfafe;
+  color: #131bff;
+  padding: 0 1.667vw;
+}
+
+.button {
+  border-radius: 4.167vw;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1vw;
+  font-weight: 600;
+  height: 3.208vw;
+  justify-content: center;
+  letter-spacing: 0.05em;
+  line-height: 3.208vw;
+  position: relative;
+  text-align: center;
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  width: auto;
+}

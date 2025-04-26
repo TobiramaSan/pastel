@@ -159,8 +159,68 @@
   border-radius: 10px;
 }
 
-@media (min-width: 1025px) and (orientation: landscape) {
-  * {
-    -webkit-user-drag: none;
+.image img {
+  height: 100%;
+  left: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  transition: filter 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  vertical-align: middle;
+  width: 100%;
+}
+
+.item0 .slider .arrows {
+  left: 2.5vw;
+  position: absolute;
+  top: 21.333vw;
+}
+
+.slider .arrows {
+  align-items: center;
+  -moz-column-gap: 0.833vw;
+  column-gap: 0.833vw;
+  display: flex;
+  white-space: nowrap;
+}
+
+.slider .arrowLeft {
+  transform: rotate(180deg);
+}
+
+.slider .arrow {
+  align-items: center;
+  border: 1px solid #01010c;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  height: 3.75vw;
+  justify-content: center;
+  position: relative;
+  width: 3.75vw;
+}
+
+.item-0 .slider .arrows .arrowRight {
+  opacity: 1;
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.slider .arrow {
+  align-items: center;
+  border: 1px solid #01010c;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  height: 3.75vw;
+  justify-content: center;
+  position: relative;
+  width: 3.75vw;
+}
+
+@media (min-width: 1101px) {
+  .item0 .slider .arrows .arrowLeft {
+    opacity: 1;
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
   }
 }

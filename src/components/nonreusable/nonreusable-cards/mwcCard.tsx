@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import styles from "./mwcCard.module.css";
 import Link from "next/link";
@@ -45,7 +46,7 @@ const MwcCard = () => {
               </div>
             </Link>
           </div>
-          <div className={styles.item}>
+          <div className={styles.item} style={{ display: "none" }}>
             <Link
               href=""
               className={`${styles.card} ${styles.cardSlider} ${styles.magnet}`}
@@ -82,7 +83,7 @@ const MwcCard = () => {
               </div>
             </Link>
           </div>
-          <div className={styles.item}>
+          <div className={styles.item} style={{ display: "none" }}>
             <Link
               href=""
               className={`${styles.card} ${styles.cardSlider} ${styles.magnet}`}
