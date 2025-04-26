@@ -1,0 +1,75 @@
+.item2 {
+  height: 40vw;
+  width: 48.75vw;
+  padding-left: 0;
+  padding-right: 0;
+  will-change: transform, opacity;
+  position: relative;
+}
+
+.item2 .card {
+  background-color: #131bff;
+  border-radius: 10px;
+  color: #fbfafe;
+  height: 100%;
+  padding: 5vw 3.75vw;
+}
+
+.card {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.label {
+  display: inline-flex;
+  font-size: 0.875vw;
+  font-weight: 500;
+  letter-spacing: normal;
+  line-height: 1.5;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.item2 .card .group {
+  bottom: 5vw;
+  left: 3.75vw;
+  position: absolute;
+  width: 30.083vw;
+}
+
+.title.large {
+  font-size: 2.917vw;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.14;
+}
+
+.title {
+  font-family: Helvetica, Arial, sans-serif;
+  position: relative;
+}
+
+.item2 .card .group .button {
+  margin-top: 2.5vw;
+  background-color: #fbfafe;
+  color: #131bff;
+  padding: 0 1.667vw;
+  border-radius: 4.167vw;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1vw;
+  font-weight: 600;
+  height: 3.208vw;
+  justify-content: center;
+  letter-spacing: 0.05em;
+  line-height: 3.208vw;
+  position: relative;
+  text-align: center;
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  width: auto;
+  outline: 0;
+  text-decoration: none;
+}
