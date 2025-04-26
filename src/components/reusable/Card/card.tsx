@@ -2,7 +2,12 @@
 import React, { useRef } from "react";
 import styles from "./card.module.css";
 import SmallArrow from "@/assets/svgs/SmallArrow";
-import { motion, useScroll, useTransform } from "motion/react";
+import {
+  motion,
+  //  useScroll,
+  //  useTransform
+} from "motion/react";
+import Link from "next/link";
 
 interface CardProps {
   title: string;
@@ -48,19 +53,19 @@ const Card = ({
           </div>
         </div>
         <div className={styles.bottom}>
-          <a href="/" className={`${styles.button} ${styles.arrow}`}>
+          <Link href="/" className={`${styles.button} ${styles.arrow}`}>
             <div className={styles.text}>{buttonName}</div>
             <div className={styles.icon}>
               <SmallArrow />
             </div>
-          </a>
+          </Link>
           {secondaryButtonName!?.length > 0 && (
-            <a href="/" className={`${styles.button} ${styles.arrow}`}>
+            <Link href="/" className={`${styles.button} ${styles.arrow}`}>
               <div className={styles.text}>{secondaryButtonName}</div>
               <div className={styles.icon}>
                 <SmallArrow />
               </div>
-            </a>
+            </Link>
           )}
         </div>
       </motion.div>

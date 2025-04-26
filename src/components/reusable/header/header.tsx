@@ -1,14 +1,15 @@
 import React from "react";
 import styles from "./header.module.css";
 import Logo from "@/assets/svgs/Logo";
+import Link from "next/link";
 const Header = () => {
   return (
     <div className={styles.container}>
       <div className={`${styles.columns} ${styles.nogutters}`}>
         <div className={styles.item}>
-          <a href="" className={styles.link}>
+          <Link href="" className={styles.link}>
             <Logo />
-          </a>
+          </Link>
         </div>
         <div className={styles.item}>
           {/* <div className={styles.submenus}>
@@ -22,35 +23,35 @@ const Header = () => {
               id="menu-item-262"
               className={`${styles.menuItem} ${styles.menuItemTypePost_type} ${styles.menuItemObjectPage} ${styles.menuItem262}`}
             >
-              <a href="/">Solutions</a>
+              <Link href="/">Solutions</Link>
             </li>
             <li
               id="menu-item-263"
               className={`${styles.menuItem} ${styles.menuItemTypePost_type} ${styles.menuItemObjectPage} ${styles.menuItem263}`}
             >
-              <a href="/">Insights</a>
+              <Link href="/">Insights</Link>
             </li>
             <li
               id="menu-item-1118"
               className={`${styles.menuItem} ${styles.menuItemTypePost_type} ${styles.menuItemObjectPage} ${styles.menuItem1118}`}
             >
-              <a href="/">About</a>
+              <Link href="/">About</Link>
             </li>
             <li
               id="menu-item-1119"
               className={`${styles.menuItem} ${styles.menuItemTypePost_type} ${styles.menuItemObjectPage} ${styles.menuItem1119}`}
             >
-              <a href="/">Careers</a>
+              <Link href="/">Careers</Link>
             </li>
           </ul>
         </div>
         <div className={styles.item}>
-          <a
+          <Link
             href="#modal-contact"
             className={`${styles.button} ${styles.tertiary}`}
           >
             Talk to our experts
-          </a>
+          </Link>
         </div>
       </div>
     </div>
