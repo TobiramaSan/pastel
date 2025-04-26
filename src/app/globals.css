@@ -43,6 +43,10 @@
     --solid-orange: #fa9b26;
     --solid-red: #ff6359;
     --solid-violet: #c189ff;
+    --vh: 10.74px;
+    --vhr: 6.78px;
+    --vho: 6.78px;
+    --vhd: 0px;
     --opacity-blue: rgba(6, 210, 228, 0.5);
     --error: #d30000;
     --success: #10bb52;

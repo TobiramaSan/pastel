@@ -125,21 +125,16 @@
 .container.wide {
   padding: 0;
   width: 100%;
+  position: relative;
+  /* height: 3954px; */
 }
 
 .componentCarouselSolutions .draggable {
-  justify-content: flex-start;
-  width: 100%;
-}
-
-.draggable {
   display: flex;
-  justify-content: center;
-  position: relative;
-}
-
-.componentCarouselSolutions .draggable .inner {
   justify-content: flex-start;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
 .draggable .inner {
@@ -147,5 +142,4 @@
   justify-content: space-between;
   position: relative;
   width: auto;
-  will-change: transform;
 }

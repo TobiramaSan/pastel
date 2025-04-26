@@ -1,9 +1,18 @@
-import React from "react";
+"use client";
+import React, { useRef } from "react";
 import styles from "./carouselComponent.module.css";
 import Arrow from "@/assets/svgs/Arrow";
 import { CardData } from "@/data/data";
 import Card from "@/components/reusable/Card/card";
+import { motion, useScroll, useTransform } from "framer-motion";
 const CarouselComponent = () => {
+  const targetRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+  });
+
+  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-100%"]);
+
   return (
     <section
       className={`${styles.section} ${styles.component} ${styles.componentCarouselSolutions}`}
@@ -40,25 +49,26 @@ const CarouselComponent = () => {
       </div>
       {/* Cards */}
 
-      <div className={`${styles.container} ${styles.wide}`}>
-        <div className={styles.sticky} style={{ height: "3954px" }}>
-          <div className={styles.draggable} style={{}}>
-            <div className={styles.inner}>
-              {CardData.map((item, index) => (
-                <Card
-                  key={index}
-                  title={item.title}
-                  description={item.description}
-                  buttonName={item.buttonName}
-                  secondaryButtonName={item.secondaryButtonName}
-                  image={item.image}
-                  color={item.color}
-                />
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
+      <motion.div
+        className={`${styles.container} ${styles.wide}`}
+        ref={targetRef}
+      >
+        <motion.div className={styles.draggable}>
+          <motion.div className={styles.inner} style={{ x }}>
+            {CardData.map((item, index) => (
+              <Card
+                key={index}
+                title={item.title}
+                description={item.description}
+                buttonName={item.buttonName}
+                secondaryButtonName={item.secondaryButtonName}
+                image={item.image}
+                color={item.color}
+              />
+            ))}
+          </motion.div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 };

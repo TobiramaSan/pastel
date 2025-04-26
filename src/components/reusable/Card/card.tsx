@@ -13,6 +13,7 @@ interface CardProps {
   image?: string;
   color?: string;
 }
+
 const Card = ({
   title,
   broken,
@@ -22,32 +23,29 @@ const Card = ({
   image,
   color,
 }: CardProps) => {
-  const ref = useRef(null);
+  //   const ref = useRef(null);
 
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start end", "end start"],
-  });
+  //   const { scrollYProgress } = useScroll({
+  //     target: ref,
+  //     offset: ["start end", "end start"],
+  //   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [100, 0]);
-  const opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
+  //   const y = useTransform(scrollYProgress, [0, 1], ["10vw", "0vw"]);
+  //   const opacity = useTransform(scrollYProgress, [0, 1], [0, 1]);
+
   return (
-    <motion.div className={`${styles.card} ${styles.cardSolution} `}>
-      <div
-        className={styles.group}
-        //   style="--color: #c189ff; height: 378px;
-        style={{ backgroundColor: color }}
-      >
+    <motion.div className={`${styles.card} ${styles.cardSolution}`}>
+      <motion.div className={styles.group} style={{ backgroundColor: color }}>
         <div className={styles.top}>
           <div className={`${styles.title} ${styles.large}`}>
             {title} <br />
             {broken}
-          </div>{" "}
+          </div>
           <div
             className={`${styles.wysiwyg} ${styles.medium} ${styles.wLight}`}
           >
             <p>{description}</p>
-          </div>{" "}
+          </div>
         </div>
         <div className={styles.bottom}>
           <a href="/" className={`${styles.button} ${styles.arrow}`}>
@@ -65,26 +63,17 @@ const Card = ({
             </a>
           )}
         </div>
-      </div>
-      <motion.div
-        ref={ref}
-        style={{
-          y,
-          opacity,
-          aspectRatio: "1.60858 / 1",
+      </motion.div>
 
-          //    backgroundColor: "#e0f7fa",
-        }}
-        // initial={{ opacity: 0, y: 50 }}
-        // whileInView={{ opacity: 1, y: 0 }}
-        // transition={{ duration: 0.8, ease: "easeOut" }}
-        // viewport={{ once: true, amount: 0.3 }}
+      {/* Image with scroll animation */}
+      <motion.div
+        // ref={ref}
         // style={{
+        //   y,
+        //   opacity,
         //   aspectRatio: "1.60858 / 1",
         // }}
         className={styles.image}
-
-        // style="aspect-ratio: 1.60858 / 1; translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);"
       >
         <img width="200" height="124" src={image} data-src={image} alt="" />
       </motion.div>

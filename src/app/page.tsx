@@ -3,6 +3,7 @@ import Hero from "@/components/nonreusable/hero/hero";
 import styles from "./page.module.css";
 import Header from "@/components/reusable/header/header";
 import CarouselComponent from "@/components/nonreusable/carouselComponent/carouselComponent";
+import Hero2 from "@/components/nonreusable/Hero2/hero2";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
             </header>
             <Hero />
             <CarouselComponent />
+            <Hero2 />
           </div>
         </div>
       </div>
