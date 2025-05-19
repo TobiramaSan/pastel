@@ -6,6 +6,7 @@ import CarouselComponent from "@/components/nonreusable/carouselComponent/carous
 import Hero2 from "@/components/nonreusable/Hero2/hero2";
 import TextComponent from "@/components/nonreusable/textComponent/textComponent";
 import AboutUs from "@/components/nonreusable/aboutUsComponent/aboutUs";
+import Footer from "@/components/nonreusable/footer/footer";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
             <Hero2 />
             <TextComponent />
             <AboutUs />
+            <Footer />
           </div>
         </div>
       </div>

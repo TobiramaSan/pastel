@@ -13,3 +13,13 @@ export interface ColorCardProps {
   title: string;
   color: string;
 }
+
+export interface FooterLinksProps {
+  title: string;
+  links: string;
+}
+
+export interface FooterProps {
+  mainTitle: string;
+  arr: FooterLinksProps[];
+}

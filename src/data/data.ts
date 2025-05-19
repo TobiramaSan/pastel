@@ -1,4 +1,9 @@
-import { CardProps, ColorCardProps } from "@/types/types";
+import {
+  CardProps,
+  ColorCardProps,
+  FooterLinksProps,
+  FooterProps,
+} from "@/types/types";
 
 const CardData: CardProps[] = [
   {
@@ -79,4 +84,94 @@ const ColorCardData: ColorCardProps[] = [
   },
 ];
 
-export { CardData, ColorCardData };
+const FooterLinks: FooterProps[] = [
+  {
+    mainTitle: "Insights",
+    arr: [
+      {
+        title: "Events",
+        links: "/",
+      },
+      {
+        title: "Webinars",
+        links: "/",
+      },
+      {
+        title: "Brochures",
+        links: "/",
+      },
+      {
+        title: "PRs",
+        links: "/",
+      },
+      {
+        title: "Whitepapers",
+        links: "/",
+      },
+      {
+        title: "Articles",
+        links: "/",
+      },
+    ],
+  },
+  {
+    mainTitle: "Solutions",
+    arr: [
+      {
+        title: "SIMs",
+        links: "/",
+      },
+      {
+        title: "eSIMs",
+        links: "/",
+      },
+      {
+        title: "eSIM Interoperability",
+        links: "/",
+      },
+      {
+        title: "Remote SIM Provisioning",
+        links: "/",
+      },
+      {
+        title: "eSIM Onboarding Journeys",
+        links: "/",
+      },
+      {
+        title: "Private Networks",
+        links: "/",
+      },
+      {
+        title: "OTA Suite",
+        links: "/",
+      },
+      {
+        title: "iSE",
+        links: "/",
+      },
+      {
+        title: "iSIM",
+        links: "/",
+      },
+      {
+        title: "IoT Connectivity",
+        links: "/",
+      },
+    ],
+  },
+  {
+    mainTitle: "About",
+    arr: [
+      {
+        title: "About",
+        links: "/",
+      },
+      {
+        title: "Careers",
+        links: "/",
+      },
+    ],
+  },
+];
+
+export { CardData, ColorCardData, FooterLinks };
