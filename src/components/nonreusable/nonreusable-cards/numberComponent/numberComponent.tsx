@@ -10,7 +10,7 @@ const NumberComponent = () => {
   const detailsData: detailsDataProps[] = [
     {
       number: "900",
-      detail: "Million connected devices use Valid's technology",
+      detail: "Million connected devices use Valid&apos;s technology",
     },
     {
       number: "100",

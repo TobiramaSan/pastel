@@ -1,6 +1,9 @@
 import React from "react";
 import styles from "./footer.module.css";
 import { FooterLinks } from "@/data/data";
+import Link from "next/link";
+// import Image from "next/image";
+import Logo from "@/assets/svgs/Logo";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
@@ -21,14 +24,9 @@ const Footer = () => {
       <div className={styles.container}>
         <div className={`${styles.columns} ${styles.columnsTop}`}>
           <div className={`${styles.item} ${styles.magnet}`}>
-            <a href="/" className={styles.brand}>
-              <img
-                src={
-                  "https://trustedconnectivity.valid.com/wp-content/themes/valid/img/logo-trusted.svg"
-                }
-                alt="go to home page"
-              />
-            </a>
+            <Link href="/" className={styles.brand}>
+              <Logo color="#01010C" />
+            </Link>
             <div className={styles.newsletter}>
               <div className={`${styles.title} ${styles.large}`}>
                 Subscribe to <br /> our newsletter
@@ -92,7 +90,7 @@ const Footer = () => {
                     className={`${styles.menuItem} ${styles.menuItemTypePost_type} ${styles.menuItemObjectPage}`}
                     key={index}
                   >
-                    <a href={item.links}>{item.title}</a>
+                    <Link href={item.links}>{item.title}</Link>
                   </li>
                 ))}
               </ul>
@@ -106,17 +104,17 @@ const Footer = () => {
                 id="menu-item-233"
                 className={`${styles.menuItem} ${styles.menuItemTypePost_type} ${styles.menuItemObjectPage} ${styles.menuItem233}`}
               >
-                <a href="https://trustedconnectivity.valid.com/privacy-policy/">
+                <Link href="https://trustedconnectivity.valid.com/privacy-policy/">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li
                 id="menu-item-231"
                 className={`${styles.menuItem} ${styles.menuItemTypePost_type} ${styles.menuItemObjectPage} ${styles.menuItem231}`}
               >
-                <a href="https://trustedconnectivity.valid.com/terms-and-conditions/">
+                <Link href="https://trustedconnectivity.valid.com/terms-and-conditions/">
                   Terms and Conditions
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -129,12 +127,12 @@ const Footer = () => {
                 id="menu-item-236"
                 className={`${styles.menuItem} ${styles.menuItemTypeCustom} ${styles.menuItemObjectCustom} ${styles.menuItem236}`}
               >
-                <a
+                <Link
                   target="_blank"
                   href="https://www.linkedin.com/company/valid-s-a-/"
                 >
                   <i className={`${styles.fab} ${styles.faLinkedIn}`}></i>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

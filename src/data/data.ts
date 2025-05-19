@@ -1,9 +1,4 @@
-import {
-  CardProps,
-  ColorCardProps,
-  FooterLinksProps,
-  FooterProps,
-} from "@/types/types";
+import { CardProps, ColorCardProps, FooterProps } from "@/types/types";
 
 const CardData: CardProps[] = [
   {

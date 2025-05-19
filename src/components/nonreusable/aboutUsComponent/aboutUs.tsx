@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./aboutUs.module.css";
+import Link from "next/link";
 const AboutUs = () => {
   return (
     <section
@@ -12,11 +13,11 @@ const AboutUs = () => {
             We offer trusted connectivity solutions to device makers,
             connectivity providers and IoT players worldwide
           </h3>
-          <a href="/" className={`${styles.button} ${styles.gradient}`}>
+          <Link href="/" className={`${styles.button} ${styles.gradient}`}>
             <div className={styles.text}>
               <span>More about us</span>
             </div>
-          </a>
+          </Link>
         </div>
         <div className={styles.columns}>
           <div className={`${styles.item} ${styles.item0}`}>
@@ -26,7 +27,7 @@ const AboutUs = () => {
               +900
             </div>
             <div className={`${styles.heading} ${styles.medium}`}>
-              Million connected devices use Valid's technology
+              Million connected devices use Valid&apos;s technology
             </div>
           </div>
           <div className={`${styles.item} ${styles.item1}`}>
