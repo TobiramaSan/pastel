@@ -4,6 +4,8 @@ import styles from "./page.module.css";
 import Header from "@/components/reusable/header/header";
 import CarouselComponent from "@/components/nonreusable/carouselComponent/carouselComponent";
 import Hero2 from "@/components/nonreusable/Hero2/hero2";
+import TextComponent from "@/components/nonreusable/textComponent/textComponent";
+import AboutUs from "@/components/nonreusable/aboutUsComponent/aboutUs";
 
 export default function Home() {
   return (
@@ -23,6 +25,8 @@ export default function Home() {
             <Hero />
             <CarouselComponent />
             <Hero2 />
+            <TextComponent />
+            <AboutUs />
           </div>
         </div>
       </div>

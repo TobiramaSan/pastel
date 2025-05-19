@@ -1,0 +1,144 @@
+.section {
+  position: relative;
+  width: 100%;
+  padding: 10vw 0 15vw;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  width: 100%;
+  margin: auto;
+  max-width: 100%;
+}
+
+.textBlockCenter {
+  color: #fbfafe;
+  margin: 0 auto 10vw;
+  position: relative;
+  text-align: center;
+  width: 50vw;
+}
+
+.textBlockCenter .label {
+  display: block;
+  margin-bottom: 2.5vw;
+  text-align: center;
+  font-size: 0.875vw;
+  font-weight: 500;
+  letter-spacing: normal;
+  line-height: 1.5;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.title.large {
+  font-size: 2.917vw;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.14;
+  position: relative;
+}
+
+.button.gradient {
+  background-color: transparent;
+  font-weight: 500;
+  padding: 0 1.667vw;
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  width: 13.333vw;
+  margin-top: 2.5vw;
+  border-radius: 4.167vw;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 1vw;
+  height: 3.208vw;
+  justify-content: center;
+  letter-spacing: 0.05em;
+  line-height: 3.208vw;
+  position: relative;
+  text-align: center;
+}
+
+.button a {
+  color: inherit;
+  font-weight: 400;
+  outline: 0;
+  text-decoration: none;
+}
+
+.button.gradient:before {
+  background: linear-gradient(
+    90deg,
+    #f9453f,
+    #fa9b26 12.5%,
+    #2ee76f 25%,
+    #18e1f3 37.5%,
+    #3f0085 50%,
+    #18e1f3 62.5%,
+    #2ee76f 75%,
+    #fa9b26 87.5%,
+    #f9453f
+  );
+  background-position: 0 50%;
+  background-size: 200% 100%;
+  border: 2px solid transparent;
+  border-radius: 4.167vw;
+  bottom: 0;
+  content: "";
+  left: 0;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  font-size: 1vw;
+  letter-spacing: 0.05em;
+  line-height: 3.208vw;
+  text-align: center;
+}
+
+.columns {
+  justify-content: space-between;
+  margin: auto;
+  width: 86.75vw;
+  row-gap: 0.833vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.columns .item {
+  color: #fbfafe;
+  text-align: center;
+  width: 25.583vw;
+  position: relative;
+  padding-right: 0.417vw;
+  padding-left: 0.417vw;
+}
+
+.supertitle.medium {
+  font-size: 10vw;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.04;
+  position: relative;
+}
+.columns .item .heading {
+  margin: 1.25vw auto 0;
+  width: 18.75vw;
+  font-size: 2.083vw;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  position: relative;
+}
+
+.item1 {
+  margin-top: 5vw;
+}
+
+.columns .item2 {
+  margin-top: 10vw;
+}

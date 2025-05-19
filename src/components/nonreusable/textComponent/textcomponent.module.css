@@ -12,7 +12,6 @@
   height: 100vh;
   justify-content: center;
   mix-blend-mode: lighten;
-
   width: 100%;
 }
 
@@ -37,10 +36,11 @@
 .sticky .eye .top {
   background: linear-gradient(180deg, #0a0d3a, rgba(12, 8, 96, 0));
   content: "";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#010529",endColorstr="#010529",GradientType=1);
   height: 20vw;
   left: 0;
   position: absolute;
-  top: -0.042vw;
+  top: -0.042vw -1.28268px;
   width: 100%;
   z-index: 1;
 }
@@ -49,6 +49,7 @@
   background: linear-gradient(0deg, #0a0d3a, rgba(1, 5, 41, 0));
   bottom: 0;
   content: "";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#010529",endColorstr="#010529",GradientType=1);
   height: 20vw;
   left: 0;
   position: absolute;
@@ -81,6 +82,7 @@
 }
 
 .columns .item .supertitle {
+  -webkit-text-fill-color: transparent;
   background: linear-gradient(
     90deg,
     #f9453f,
@@ -93,4 +95,16 @@
   background-size: 400% 100%;
   color: #fbfafe;
   text-align: center;
+  font-size: 7.083vw;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 0.82;
+  position: relative;
+}
+
+.supertitle.small {
+  font-size: 7.083vw;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 0.82;
 }
