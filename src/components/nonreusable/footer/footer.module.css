@@ -364,9 +364,9 @@ footer .menuSocial li a i {
   content: "\f0e1";
 }
 
-:before {
+/* :before {
   box-sizing: border-box;
-}
+} */
 
 footer .menuSocial li a i {
   font-size: 1vw;
